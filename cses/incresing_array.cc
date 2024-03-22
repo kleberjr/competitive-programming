@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>
+#define ll long long
+
 using namespace std;
 
 // Problem: https://cses.fi/problemset/task/1094
@@ -7,10 +9,10 @@ int main() {
   ios_base::sync_with_stdio(false); 
   cin.tie(NULL);    
   
-  long long int n;
+  ll int n;
   cin >> n;
 
-  long long int previous_number, current_number, diff, moves;
+  ll int previous_number, current_number, diff, moves;
   previous_number = current_number = diff = moves = 0;
 
   for (int i = 1; i < n + 1; i++) {

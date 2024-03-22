@@ -1,10 +1,12 @@
 #include <bits/stdc++.h>
+#define ll long long
+
 using namespace std;
 
 // Problem: https://cses.fi/problemset/task/1068
 
 int main() {
-  long long int n;
+  ll int n;
   scanf("%lld", &n);
 
   printf("%lld", n);

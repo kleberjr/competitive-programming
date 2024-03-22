@@ -1,11 +1,13 @@
 #include <bits/stdc++.h>
+#define ll long long
+
 using namespace std;
 
 // Problem: https://cses.fi/problemset/task/1083
 
 int main() {
-  long long int count = 1;
-  long long int maxCount = 1;
+  ll int count = 1;
+  ll int maxCount = 1;
 
   string dna;
   cin >> dna;
