@@ -22,9 +22,7 @@ int main() {
       count = 1;
     }
 
-    if (count > maxCount) {
-      maxCount = count;
-    }
+    maxCount = max(count, maxCount);
   }
 
   cout << maxCount;
