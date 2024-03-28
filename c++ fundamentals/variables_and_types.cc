@@ -29,9 +29,22 @@ int main() {
     cout << "O " << i << "º número inserido foi " << x << endl;
   }
 
-  // Agrupam pares de informação de acordo com o tipo, podem ser comparados e isso leva O(1)
+  // Agrupam pares de informação de acordo com o tipo
   pair<int, int> p1 = make_pair(0, 1);
   pair<int, string> p2 = make_pair(0, "teste");
+  pair<int, int> p3 = make_pair(0, 2);
 
+  // Os pares podem ser comparados, mas apenas aqueles do mesmo tipo
+  if (p1 > p3) {
+    cout << "O par p1 é maior que o p3";
+  } else {
+    cout << "O par p3 é maior que o p1";
+  }
+
+  // Inicializa um array de inteiros com 2 posições
+  int v[2] = {0, 1};
+  int* pointer = v;   // pointer é um ponteiro que aponta para v[0]
+  pointer++;          // Agora ele aponta pra v[1]
+  
   return 0;
 }
