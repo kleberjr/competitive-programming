@@ -43,8 +43,11 @@ int main() {
 
   // Inicializa um array de inteiros com 2 posições
   int v[2] = {0, 1};
-  int* pointer = v;   // pointer é um ponteiro que aponta para v[0]
-  pointer++;          // Agora ele aponta pra v[1]
+  // Se tentarmos acessar o array assim, receberemos o endereço de memória do primeiro elemento
+  cout << v[0];
+
+  int* p = v;   // p é um ponteiro que aponta para v[0]
+  p++;          // Agora ele aponta pra v[1]
   
   return 0;
 }
