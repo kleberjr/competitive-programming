@@ -40,9 +40,7 @@ int main() {
   while(q--) {
     cin >> l >> r;
     
-    int sum = 0;
-    sum = psum[r] - psum[l-1];
-    cout << sum << "\n";
+    cout << psum[r] - psum[l-1] << "\n";
   }
 
 
